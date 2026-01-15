@@ -1,0 +1,44 @@
+{
+  "cluster": {
+    "tee_count": 4,
+    "max_tee_count": 10
+  },
+  "transactions": {
+    "total_tx_count": 10000,
+    "tx_per_tee": 2500,
+    "min_tx_per_tee": 1000,
+    "max_tx_per_tee": 5000
+  },
+  "operations": {
+    "ops_per_tee": 5000,
+    "min_ops_per_tee": 2000,
+    "max_ops_per_tee": 10000,
+    "ops_per_tx": 2
+  },
+  "conflict": {
+    "per_tee_conflict_rate": 0.2,
+    "global_conflict_rate": 0.15,
+    "conflict_account_count": 10,
+    "conflict_token_count": 3
+  },
+  "failure": {
+    "failed_tx_count": 5,
+    "failure_rate": 0.05,
+    "insufficient_balance_rate": 0.03
+  },
+  "token": {
+    "token_count": 5,
+    "initial_balance": 10000
+  },
+  "accounts": {
+    "account_count": 20,
+    "accounts_per_tee": 7
+  },
+  "timing": {
+    "leader_election_interval": 10000,
+    "epoch_interval": 30000,
+    "sync_interval": 5000
+  }
+}
+
+
